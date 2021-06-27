@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form style.css">
+    <script src="form js.js"></script>
+</head>
+<body>
+    <div class='form'>
+        <div class='name'>
+            <p>Enter your Name:</p> <input class='fname' type='text' placeholder='First Name' required></input>
+            <input class='lname' type='text' placeholder='Last Name' required></input><br>
+        </div>
+        <p>Gender:</p>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label><br>
+        <p>Choice of Food: (must choose at least 2) </p>
+          <input type="checkbox" name="food[]" value="Indian" id="food" required>
+          <label for="Indian">Indian</label>
+          <input type="checkbox" name="food[]" value="Chinese" required>
+          <label for="Chinese">Chinese</label>
+          <input type="checkbox" name="food[]" value="Mexican" required>
+          <label for="Mexican">Mexican</label>
+          <input type="checkbox" name="food[]" value="Italian" required>
+          <label for="Italian">Italian</label>
+          <input type="checkbox" name="food[]" value="Arabian" required>
+          <label for="Arabian">Arabian</label><br>
+        <div class='addres'>
+        <p>Address: </p> <textarea class='address' rows='3' cols='35' maxlength='105' placeholder="Enter DoorNo/Street name/Lank mark" required></textarea><br>
+        </div>
+        <lable>Pincode: </lable> <input class='pincode' type='number' placeholder='Pincode' maxlength='21' required></input><br>
+        <lable>State: </lable> <input class='state' type='text' placeholder='State' required></input><br>
+        <lable>Country: </lable> <input class='country' type='text' placeholder='Country' required></input><br>
+        <button onclick="reset()">Reset</button>
+        <button onclick="submit()">Submit</button>
+    </div>
+
+    <div class='table'>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Gender</th>
+                <th>Choice of Food</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+            <tbody class="addtotable">
+              
+            </tbody>
+        </table>
+     </div>
+        
+</body>
+</html>
